@@ -1,0 +1,149 @@
+/* Sets a clean base for the whole page */
+body {
+	margin: 0;
+	font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	background-color: #eaf8f7;
+}
+
+/* Styles a short top header with the site name */
+.site-header {
+	padding: 14px 24px;
+	text-align: center;
+	background-color: #0c5f7a;
+	color: #ffffff;
+}
+
+/* Keeps the site name clear and simple */
+.site-header h1 {
+	margin: 0;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+/* Styles the CTA banner area */
+.adoption-cta {
+	min-height: 200px;
+	padding: 80px 24px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #0a6f8f;
+	/* Adds a stronger overlay so the background image looks more transparent */
+	background-image: linear-gradient(rgba(10, 111, 143, 0.72), rgba(15, 158, 168, 0.66)), url("img/cta-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Makes the main message large and bold */
+.adoption-cta h2 {
+	margin-top: 0;
+	margin-bottom: 22px;
+	font-size: 56px;
+	line-height: 1.15;
+}
+
+/* Keeps the description readable and focused */
+.adoption-cta p {
+	max-width: 740px;
+	margin: 0 auto 36px;
+	font-size: 21px;
+	line-height: 1.6;
+}
+
+/* Turns the link into a bright call-to-action button */
+.cta-button {
+	display: inline-block;
+	padding: 16px 34px;
+	border-radius: 8px;
+	background-color: #ffd447;
+	color: #0b3a4a;
+	text-decoration: none;
+	font-size: 19px;
+	font-weight: 700;
+}
+
+/* Adds a stronger visual cue when hovering */
+.cta-button:hover {
+	background-color: #ffe57d;
+}
+
+/* Creates a centered content area below the banner */
+.foster-info {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 70px 24px;
+	text-align: center;
+	background-color: #f3fbfb;
+}
+
+/* Builds two even columns using simple inline blocks */
+.info-column {
+	display: inline-block;
+	width: 45%;
+	margin: 0 2%;
+	vertical-align: middle;
+	text-align: left;
+}
+
+/* Makes the image fill its column cleanly */
+.info-column img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	display: block;
+}
+
+/* Keeps the figure spacing clean */
+.foster-info figure {
+	margin: 0 2% 0 2%;
+}
+
+/* Styles the informational heading */
+.foster-info h2 {
+	margin-top: 0;
+	margin-bottom: 18px;
+	font-size: 36px;
+	line-height: 1.2;
+	color: #0c5f7a;
+}
+
+/* Improves readability for body text */
+.foster-info p {
+	margin: 0 0 16px;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #1d4c58;
+}
+
+/* Adjusts spacing and text size for smaller screens */
+@media (max-width: 700px) {
+	.adoption-cta {
+		min-height: 360px;
+		padding: 64px 18px;
+	}
+
+	.adoption-cta h2 {
+		font-size: 38px;
+	}
+
+	.adoption-cta p {
+		font-size: 18px;
+	}
+
+	/* Stacks the columns on smaller screens */
+	.info-column {
+		display: block;
+		width: 100%;
+		margin: 0 0 24px;
+	}
+
+	/* Adjusts section spacing for mobile */
+	.foster-info {
+		padding: 54px 18px;
+	}
+
+	/* Slightly reduces heading size on mobile */
+	.foster-info h2 {
+		font-size: 30px;
+	}
+}
